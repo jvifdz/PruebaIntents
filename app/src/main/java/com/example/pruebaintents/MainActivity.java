@@ -25,7 +25,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void siguiente3(View view) {
+        startActivity(new Intent("android.intent.action.MAIN"));
 
-        
+
+    }
+
+    public void siguiente4(View view) {
+
+        Intent i = new Intent(this, ActividadPasandoDatos.class);
+        i.putExtra("nombre","Roberto");
+        i.putExtra("edad",46);
+        startActivity(i);
+
     }
 }
